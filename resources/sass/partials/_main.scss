@@ -1,0 +1,40 @@
+main{
+    background-color: #1c1c1c;
+    .mb-container{
+        position: relative;
+        padding: 30px 15px;
+        .mb-current-series{
+            position: absolute;
+            top: 5px;
+            left: 0px;
+            border: none;
+            background-color: $primary-color;
+            color: white;
+            padding: 5px 15px;
+            font-weight: bold;
+            font-size: 17px;
+        }
+        .moreBtn{
+            text-align: center;
+            flex-grow: 1;
+            .mb-load-more{
+                border: none;
+                padding: 5px 50px;
+                background-color: $primary-color;
+                color: white;
+                margin-top: 30px;
+            }
+        }
+        .mb-card{
+            width: calc(100% / 6);
+            margin-top: 30px;
+            .logo{
+                height: 192px;
+                overflow: hidden;
+            }
+            h6{
+                color: white;
+            }
+        }
+    }
+}
