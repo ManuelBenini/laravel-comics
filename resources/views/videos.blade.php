@@ -1,23 +1,9 @@
 @extends('layouts.main')
 
-@section('title')
-    Video
-    {{--  
-        OPPURE
-        {{Route::currentRouteName()}} 
-    --}}
-@endsection
+@section('title', 'Video')
 
 @section('content')
 
-    <main>
-
-        <div class="container mb-container d-flex flex-wrap">
-
-            <h2 class="text-light">Nessun video!</h2>
-
-        </div>
-        
-    </main>
-
 @endsection
+
+@section('h2-text', 'Nessun video!')

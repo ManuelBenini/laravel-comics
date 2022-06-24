@@ -13,8 +13,23 @@
 <body>
 
     @include('partials.header')
+
+    @include('partials.jumbotron')
+
+    <main>
+
+        <div class="container mb-container d-flex flex-wrap">
+
+            @yield('content')
+
+            <h2 class="text-light">@yield('h2-text')</h2>
+
+        </div>
+        
+    </main>
+
     
-    @yield('content')
+    @include('partials.shopCategories')
     
     @include('partials.footer')
     

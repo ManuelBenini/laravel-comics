@@ -5,7 +5,7 @@ main{
         padding: 30px 15px;
         .mb-current-series{
             position: absolute;
-            top: 5px;
+            top: -20px;
             left: 0px;
             border: none;
             background-color: $primary-color;
@@ -27,7 +27,7 @@ main{
         }
         .mb-card{
             width: calc(100% / 6);
-            margin-top: 30px;
+            margin-top: 15px;
             .logo{
                 height: 192px;
                 overflow: hidden;

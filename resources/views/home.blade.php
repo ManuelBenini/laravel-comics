@@ -1,23 +1,9 @@
 @extends('layouts.main')
 
-@section('title')
-    Homepage
-    {{--  
-        OPPURE
-        {{Route::currentRouteName()}} 
-    --}}
-@endsection
+@section('title', 'Homepage')
 
 @section('content')
 
-    <main>
-
-        <div class="container mb-container d-flex flex-wrap">
-
-            <h2 class="text-light">Benvenuti nel sito della DC Comics!</h2>
-
-        </div>
-        
-    </main>
-
 @endsection
+
+@section('h2-text', 'Benvenuti nel sito della DC Comics!')

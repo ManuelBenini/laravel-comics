@@ -1,23 +1,9 @@
 @extends('layouts.main')
 
-@section('title')
-    fan
-    {{--  
-        OPPURE
-        {{Route::currentRouteName()}} 
-    --}}
-@endsection
+@section('title', 'fan')
 
 @section('content')
 
-    <main>
-
-        <div class="container mb-container d-flex flex-wrap">
-
-            <h2 class="text-light">Nessun..Fan?</h2>
-
-        </div>
-        
-    </main>
-
 @endsection
+
+@section('h2-text', 'Nessun..Fan?')
