@@ -13,49 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', 'PageController@index')->name('home');
 
-Route::get('/personaggi', function () {
-    return view('characters');
-})->name('characters');
+Route::get('/personaggi', 'PageController@characters')->name('characters');
 
-Route::get('/collezionabili', function () {
-    return view('collectibles');
-})->name('collectibles');
+Route::get('/collezionabili', 'PageController@collectibles')->name('collectibles');
 
-Route::get('/fumetti', function () {
+Route::get('/fumetti', 'PageController@comics')->name('comics');
 
-    $data = config('comics');
+Route::get('/fan', 'PageController@fans')->name('fans');
 
-    return view('comics', ['comics'=>$data]);
-})->name('comics');
+Route::get('/giochi', 'PageController@games')->name('games');
 
-Route::get('/fan', function () {
-    return view('fans');
-})->name('fans');
+Route::get('/film', 'PageController@movies')->name('movies');
 
-Route::get('/giochi', function () {
-    return view('games');
-})->name('games');
+Route::get('/novità', 'PageController@news')->name('news');
 
-Route::get('/film', function () {
-    return view('movies');
-})->name('movies');
+Route::get('/negozio', 'PageController@shop')->name('shop');
 
-Route::get('/novità', function () {
-    return view('news');
-})->name('news');
+Route::get('/serieTV', 'PageController@tv')->name('tv');
 
-Route::get('/negozio', function () {
-    return view('shop');
-})->name('shop');
-
-Route::get('/serieTV', function () {
-    return view('tv');
-})->name('tv');
-
-Route::get('/video', function () {
-    return view('videos');
-})->name('videos');
+Route::get('/video', 'PageController@videos')->name('videos');
